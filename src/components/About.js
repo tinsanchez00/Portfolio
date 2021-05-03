@@ -1,55 +1,89 @@
 import React from 'react';
-import {
-	BottomBox,
-	Container,
-	Separator,
-	SkillsBox,
-	TopBox,
-} from '../styles/About.styles';
-import SkillCard from './SkillCard';
+import styled from 'styled-components';
+import Separator from './global/Separator';
+import SkillsBox from './SkillsBox';
 
 const About = () => {
 	return (
-		<Container>
+		<Container id='SKILLS'>
 			<TopBox>
 				<h2>About Me</h2>
-				<Separator></Separator>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Voluptas numquam aliquid excepturi iste nulla dicta!
-					Perspiciatis nemo eius eum, nostrum eos saepe porro in
-					reiciendis possimus voluptate repellendus quos doloremque!
-				</p>
+				{/* <Separator></Separator> */}
+				<ul>
+					<li>
+						I enjoy learning cool stuff on the{' '}
+						<span className='nobreak'>internet🚀</span>
+					</li>
+					<li>
+						I'm looking for interesting projects to{' '}
+						<span className='nobreak'>work on💻</span>
+					</li>
+					<li>
+						I can work independently but much rather work with a{' '}
+						<span className='nobreak'>motivated team👥</span>
+					</li>
+					<li>
+						Fan of Card Games &{' '}
+						<span className='nobreak'>Roguelikes🎮</span>
+					</li>
+				</ul>
 			</TopBox>
 
 			<BottomBox>
 				<h3>Skills</h3>
-				<SkillsBox>
-					{[
-						1,
-						2,
-						3,
-						4,
-						5,
-						6,
-						7,
-						8,
-						9,
-						10,
-						11,
-						12,
-						13,
-						14,
-						15,
-						16,
-						17,
-					].map((e) => {
-						return <SkillCard d={e} />;
-					})}
-				</SkillsBox>
+				<SkillsBox />
 			</BottomBox>
 		</Container>
 	);
 };
+
+export const TopBox = styled.div`
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	ul {
+		list-style: none;
+		margin-top: 20px;
+	}
+
+	li {
+		font-weight: 500;
+		font-size: 1.3em;
+	}
+
+	h2 {
+		margin-top: 10px;
+	}
+
+	.nobreak {
+		white-space: pre;
+	}
+`;
+export const BottomBox = styled.div`
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 15px;
+
+	h3 {
+		margin-top: 1em;
+	}
+`;
+
+export const Container = styled.div`
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	max-height: 1000px;
+	align-items: center;
+	padding: 15px 8%;
+	justify-content: space-between;
+`;
 
 export default About;

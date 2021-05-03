@@ -1,9 +1,21 @@
 :root {
 	--primary-clr: #fe4174;
+	--primary-alpha-clr: #fe417349;
 	--high-clr: #df003c;
+	--high-dark-clr: #36101a;
 	--dark-clr: #262526;
+	--darker-clr: #141414;
 	--dark-alpha-clr: #262526b7;
 	--soft-clr: #ffa7be;
+}
+
+::selection {
+	color: var(--darker-clr);
+	background-color: var(--high-clr);
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 * {
