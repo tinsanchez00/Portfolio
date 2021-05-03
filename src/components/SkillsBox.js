@@ -15,6 +15,7 @@ const iconArr = [
 	'GraphQL',
 	'Sass',
 	'Jest',
+	'java',
 	'C++',
 ];
 
