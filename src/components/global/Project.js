@@ -53,6 +53,10 @@ export const Main = styled.div`
 	border-radius: 6px;
 	padding: 15px;
 
+	@media only screen and (max-width: 600px) {
+		box-shadow: none;
+	}
+
 	@media only screen and (max-width: 1100px) {
 		flex-direction: column;
 	}
