@@ -11,7 +11,7 @@ const arrSocials = [
 ];
 
 const Contact = () => {
-	const [input, handleInput, handleSubmit] = useContactForm();
+	const [input, isSent, handleInput, handleSubmit] = useContactForm();
 
 	return (
 		<Main id='CONTACT'>
@@ -59,7 +59,11 @@ const Contact = () => {
 						onChange={handleInput}
 					></TextArea>
 				</TextBox>
-				<ButtonPlain className='sm'>Send</ButtonPlain>
+				{isSent ? (
+					<ButtonPlain className='sm'>Sent!👍</ButtonPlain>
+				) : (
+					<ButtonPlain className='sm'>Send</ButtonPlain>
+				)}
 			</Form>
 		</Main>
 	);
