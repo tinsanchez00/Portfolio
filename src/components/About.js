@@ -44,6 +44,7 @@ export const TopBox = styled.div`
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	margin-top: 50px;
 
 	ul {
 		list-style: none;
@@ -53,10 +54,6 @@ export const TopBox = styled.div`
 	li {
 		font-weight: 500;
 		font-size: 1.3em;
-	}
-
-	h2 {
-		margin-top: 10px;
 	}
 
 	.nobreak {
@@ -70,6 +67,7 @@ export const BottomBox = styled.div`
 	justify-content: center;
 	align-items: center;
 	margin-top: 15px;
+	margin-bottom: 60px;
 
 	h3 {
 		margin-top: 1em;
@@ -78,11 +76,11 @@ export const BottomBox = styled.div`
 
 export const Container = styled.div`
 	display: flex;
-	width: 100%;
+	width: inherit;
 	flex-direction: column;
 	max-height: 1000px;
 	align-items: center;
-	padding: 15px 8%;
+	padding: 0 8%;
 	justify-content: space-between;
 `;
 

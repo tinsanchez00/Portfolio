@@ -19,9 +19,7 @@ export const Container = styled.span`
 	}
 
 	@media only screen and (max-width: 800px) {
-		& {
-			display: none;
-		}
+		display: none;
 	}
 
 	.ballcircle {
@@ -56,6 +54,17 @@ export const Container = styled.span`
 			transform: rotateZ(360deg);
 		}
 	}
+
+	@media only screen and (min-width: 1600px) {
+		width: 330px;
+		height: 330px;
+		margin-top: 80px;
+
+		.ballcircle {
+			width: 375px;
+			height: 375px;
+		}
+	}
 `;
 
 export const CircleContainer = styled.span`
@@ -65,8 +74,17 @@ export const CircleContainer = styled.span`
 	height: 280px; /* by 30px higher */
 	margin-top: -50px; /* and offset by 30px */
 	background: none no-repeat center bottom / 230px;
-	border-radius: 0 0 115px 115px; /* 70 + 70 = 140px width */
+	border-radius: 0 0 115px 115px;
 	background-image: url('imgs/PPicSmall.png');
+
+	@media only screen and (min-width: 1600px) {
+		width: 330px;
+		height: 410px;
+		margin-top: -80px;
+		background: none no-repeat center bottom / 330px;
+		background-image: url('imgs/PPicSmall.png');
+		border-radius: 0 0 165px 165px;
+	}
 `;
 
 const HeroImage = () => {

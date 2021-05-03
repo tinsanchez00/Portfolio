@@ -46,6 +46,7 @@ export const Main = styled.div`
 	display: flex;
 	width: auto;
 	margin: 45px 0;
+	min-height: 570px;
 	align-items: center;
 	justify-content: space-between;
 	box-shadow: 0 1px 7px 3px var(--darker-clr) inset;

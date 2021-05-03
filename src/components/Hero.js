@@ -88,6 +88,10 @@ export const Section = styled.section`
 		text-decoration: none;
 		display: inline-block;
 	}
+
+	@media only screen and (min-width: 1600px) {
+		height: 960px;
+	}
 `;
 
 const TitleIcon = styled(AiFillThunderbolt)`

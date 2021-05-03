@@ -67,13 +67,13 @@ const Contact = () => {
 
 export const Main = styled.div`
 	width: 100%;
-	height: 600px;
+	min-height: 700px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
 	h2 {
-		margin: 50px;
+		margin-top: 90px;
 		margin-bottom: 20px;
 	}
 
@@ -84,6 +84,10 @@ export const Main = styled.div`
 	.danger {
 		border: 2px solid red;
 	}
+
+	button {
+		margin-top: 40px;
+	}
 `;
 
 export const Form = styled.form`
@@ -93,12 +97,14 @@ export const Form = styled.form`
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
+	margin: 60px 0;
 `;
 
 export const TextBox = styled.div`
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	margin-top: 30px;
 
 	&:focus-within > label {
 		font-weight: 600;

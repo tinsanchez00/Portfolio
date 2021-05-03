@@ -30,6 +30,13 @@ export const OuterContainer = styled.section`
 	border-bottom: 5px solid var(--high-clr);
 	box-shadow: 2px 1px 7px 6px #00000080;
 	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	@media only screen and (min-width: 1600px) {
+		margin-top: 960px;
+	}
 `;
 
 export const InnerContainer = styled.div`
@@ -39,6 +46,8 @@ export const InnerContainer = styled.div`
 	background-color: var(--dark-clr);
 	margin-bottom: 4%;
 	box-shadow: 0 0 6px 4px #00000060 inset;
+	max-width: 1500px;
+	width: inherit;
 `;
 
 export default MainContainer;

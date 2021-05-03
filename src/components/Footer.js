@@ -7,7 +7,7 @@ const Footer = () => {
 
 export const FooterStyled = styled.footer`
 	width: 100%;
-	height: 120px;
+	height: 100px;
 	background-color: var(--darker-clr);
 `;
 
