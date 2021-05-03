@@ -67,6 +67,18 @@ export const Container = styled.div`
 		opacity: 1;
 		transition: opacity 400ms 400ms ease-out;
 	}
+	@media only screen and (max-width: 450px) {
+		height: 70px;
+		width: 70px;
+
+		.icon-name {
+			font-size: 0.7em;
+		}
+
+		.short {
+			font-size: 1em;
+		}
+	}
 `;
 
 export default SkillCard;

@@ -35,6 +35,12 @@ export const Button = styled.button`
 		box-shadow: 0px 0px 2px 0px #00000010;
 		background-color: #ffffff40;
 	}
+
+	@media only screen and (max-width: 450px) {
+		&.sm {
+			width: 140px;
+		}
+	}
 `;
 
 const ButtonPlain = ({ children, className }) => {
